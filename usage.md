@@ -63,9 +63,9 @@ Fill the form as follows, then click `Create decision environment` button on the
 
 #### Add Project on EDA Server
 
-To run Ansible Rulebook by EDA Server, the repository on SCM `must` contains Rulebooks have to be registered as Project on EDA Server.
+To run Ansible Rulebook by EDA Server, the repository on SCM `must contains rulebooks folder` have to be registered as Project on EDA Server.
 
-This repository contains some example `rulebooks` directory, so we can register this repository as Project.
+This repository contains some example Rulebooks under [rulebooks](./) directory, so we can register this repository as Project.
 
 Open `Projects` on Web UI for EDA Server, then click `Create project` button.
 
