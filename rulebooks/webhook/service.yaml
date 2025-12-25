@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: eda
+  name: eda-service-webhook
+spec:
+  selector:
+    ansible-rulebook-job: activation-job-1-1-5000
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000
+      nodePort: 30005
