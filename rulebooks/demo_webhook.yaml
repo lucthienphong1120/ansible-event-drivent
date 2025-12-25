@@ -11,6 +11,14 @@
     - name: Run Demo Job Template
       condition: event.payload.message == "Hello EDA"
       action:
+        debug:
+          msg: "Listen event: '{{ event.payload.message }}'. Running Demo Job"
         run_job_template:
           name: Demo Job Template
           organization: Default
+
+    - name: Debug messages
+      condition: event.payload.message != "Hello EDA"
+      action:
+        debug:
+          msg: "Listen event: '{{ event.payload.message }}'. Nothing to do"
